@@ -1,0 +1,16 @@
+public class Showtime {
+    private Movie movie;
+    private String time;
+    private int seatsAvailable;
+
+    public Showtime(Movie movie, String time, int seatsAvailable) {
+        this.movie = movie;
+        this.time = time;
+        this.seatsAvailable = seatsAvailable;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s - %s (%d seats available)", movie, time, seatsAvailable);
+    }
+}

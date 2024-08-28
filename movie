@@ -1,0 +1,16 @@
+public class Movie {
+    private String title;
+    private int duration;
+    private double price;
+
+    public Movie(String title, int duration, double price) {
+        this.title = title;
+        this.duration = duration;
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s (%d minutes) - $%.2f", title, duration, price);
+    }
+}

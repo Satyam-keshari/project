@@ -1,0 +1,14 @@
+public class Booking {
+    private Showtime showtime;
+    private int numSeats;
+
+    public Booking(Showtime showtime, int numSeats) {
+        this.showtime = showtime;
+        this.numSeats = numSeats;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Booking for %s - %d seats", showtime, numSeats);
+    }
+}

@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class MovieBookingSystem {
+    private List<Movie> movies;
+    private List<Showtime> showtimes;
+    private List<Booking> bookings;
+
+    public MovieBookingSystem() {
+        movies = new ArrayList<>();
+        showtimes = new ArrayList<>();
+        bookings = new ArrayList<>();
+    }
+
+    public void addMovie(String title, int duration, double price) {
+        Movie movie = new Movie(title, duration, price);
+        movies.add(movie);
+    }
+
+    // Add more methods for adding showtimes, making bookings, etc.
+}
